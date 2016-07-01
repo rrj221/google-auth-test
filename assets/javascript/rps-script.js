@@ -52,7 +52,7 @@ firebase.auth().getRedirectResult().then(function (result) {
 	var username = user.displayName;
 	$('#welcome', {
 		text: 'Welcome '+username
-	}
+	});
 }).catch(function (error) {
 	alert('bad');
 	//Handle Errors here.
