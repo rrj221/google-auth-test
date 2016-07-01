@@ -23,9 +23,7 @@ firebase.auth().signInWithPopup(provider).then(function (result) {
 	var user = result.user;
 	var username = user.displayName;
 	console.log(username);
-	$('#welcome', {
-		text: 'Welcome '+username
-	});
+	$('#welcome').text(username);
 }).catch(function (error) {
 	//Handle Errors here.
 	var errorCode = error.code;
@@ -37,9 +35,7 @@ firebase.auth().signInWithPopup(provider).then(function (result) {
 	console.log(errorMessage);
 });
 
-	$('#welcome', {
-		text: 'Welcome '+'username'
-	});
+
 
 
 //sign in with redirect
