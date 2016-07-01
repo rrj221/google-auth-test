@@ -22,6 +22,7 @@ firebase.auth().signInWithPopup(provider).then(function (result) {
 	//The signed-in user info
 	var user = result.user;
 	var username = user.displayName;
+	console.log(username)
 	$('#welcome', {
 		text: 'Welcome '+username
 	});
