@@ -23,7 +23,7 @@ firebase.auth().signInWithPopup(provider).then(function (result) {
 	var user = result.user;
 	var username = user.displayName;
 	console.log(username);
-	$('#welcome').text(username);
+	$('#welcome').text("Welcome "+username+"!");
 }).catch(function (error) {
 	//Handle Errors here.
 	var errorCode = error.code;
