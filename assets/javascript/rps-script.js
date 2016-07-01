@@ -24,7 +24,7 @@ firebase.auth().signInWithPopup(provider).then(function (result) {
 	var username = user.displayName;
 	$('#welcome', {
 		text: 'Welcome '+username
-	}
+	});
 }).catch(function (error) {
 	//Handle Errors here.
 	var errorCode = error.code;
